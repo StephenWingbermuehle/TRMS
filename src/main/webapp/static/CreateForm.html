@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Make A New Reimbursement Form</title>
+
+	<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
+	<link rel="stylesheet"
+	href="CSS.css">
+</head>
+<body>
+<br>
+<h1> Create a New Reimbursement Form Here</h1>
+	<div >
+		<form class="NewFormTable" action="/TRMS/ReimbursementForm" method="POST">
+			<label for="eventTime">Date and Time:</label><br> 
+			<input type="datetime-local" id="eventTime" name="eventTime"><br>
+			
+			<label for="locationplace">Location:</label><br>
+			<input type="text" id="locationplace" name="locationplace"><br>
+			
+			<label for="descriptionAnecdote">Description:</label><br> 
+			<input type="text" id="descriptionAnecdote" name="descriptionAnecdote"><br>
+			
+			<label for="costOfTraining">Cost of this Training:</label><br>
+			<input type="number" id="costOfTraining" name="costOfTraining"><br>
+			
+			<!-- this will have to be a drop down -->
+			<!-- drop downs use select instead of input -->
+			<label for="gradeType">Grading Type:</label><br> 
+			<select id="gradeType" name="gradeType" required><option value="">Grading Type:</option></select><br>
+			
+			<!-- this will have to be a drop down -->
+			<label for="eventType">Type:</label><br>
+			<select id="eventType" name="eventType" required><option value="">Type of Training</option></select><br>
+			
+			<label for="passingGrade">Grade Required to Pass:</label><br> 
+			<input type="text" id="passingGrade" name="passingGrade"><br>
+			
+			
+			<!-- why would the employee set their own approval status? This is not necessary -->
+			<!--  <label for="Approval">Approval Status</label><br>
+			<input type="number" id="Approval" name="Approval"><br> -->
+			<button class="cfbtn" type="submit">GIVE IN TO YOUR ANGER! (submit)</button>
+		</form>
+	</div>
+	
+	
+	<script type="text/javascript" src="/TRMS/static/js/ReimbursementForm.js"></script>
+	<script type="text/javascript" src="/TRMS/static/js/login.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,64 @@
+@charset "ISO-8859-1";
+body {
+	background-image: url('images/dark-side.jpg'); background-size: 100% 100%; background-repeat: no-repeat; background-attachment: fixed;
+}
+.NewFormTable {
+	background-color: white;
+	opacity: 0.70;
+}
+h1 {
+	 color: #ffffff;
+	 font-family: 'Helvetica Neue', sans-serif;
+	 font-weight: bold;
+	 letter-spacing: -1px;
+	 line-height: 1;
+	 text-align: center;
+}
+label {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: bold;
+}
+input {
+	border-radius: 15px;
+}
+.cfbtn {
+	color: #ffffff;
+	background-color: #940513;
+	border-radius: 25px;
+  	border: 2px solid #73AD21;
+  	border-color: black;
+ 	padding: 20px;
+  	width: 150px;
+  	height: 100px;
+}
+table {
+	border-collapse: collapse;
+}
+table, th, td{
+	border: 1px solid black;
+}
+th, td {
+	padding: 10px;
+}
+th {
+	background-color: red;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+}
+td {
+	text-align: left;
+	height: 50px;
+	vertical-align: bottom;
+}
+tr:nth-child(even) {
+	background-color: #cacaca;
+}
+tr:hover {
+	background-color: #ff8491;
+		border-radius: 15px;
+}
+button:hover {
+	background-color: red;
+	color: white;
+}
